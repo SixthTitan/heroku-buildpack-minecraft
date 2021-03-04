@@ -1,11 +1,11 @@
 {
-  "name": "Minecraft",
-  "description": "A Minecraft Server on Heroku",
+  "name": "Minecraft Forge",
+  "description": "A Minecraft Forge Server on Heroku",
   "keywords": [
     "games",
     "minecraft"
   ],
-  "repository": "https://github.com/jkutner/heroku-buildpack-minecraft",
+  "repository": "https://github.com/SixthTitan/heroku-buildpack-minecraft",
   "env": {
     "MINECRAFT_EULA": {
       "description": "Do you accept the Minecraft EULA?",
