@@ -84,7 +84,7 @@ minecraft_url="https://minecraft-athena.s3.amazonaws.com/modid-1.0.jar"
 #  minecraft_url="https://s3.amazonaws.com/Minecraft.Download/versions/${minecraft_version}/minecraft_server.${minecraft_version}.jar"
 #fi
 
-echo -n "-----> Installing Minecraft ${minecraft_version}... "
+echo -n "-----> Installing Minecraft... "
 curl -o minecraft.jar -s -L $minecraft_url
 mv minecraft.jar $BUILD_DIR/minecraft.jar
 echo "done"
