@@ -83,7 +83,7 @@ else
   minecraft_url="https://s3.amazonaws.com/Minecraft.Download/versions/${minecraft_version}/minecraft_server.${minecraft_version}.jar"
 fi
 
-custom_minecraft_url="https://minecraft-athena.s3.amazonaws.com/modid-1.0.jar"
+custom_minecraft_url="https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.16.5-36.0.45/forge-1.16.5-36.0.45-installer.jar"
 
 echo -n "-----> Installing Minecraft ${minecraft_version}... "
 curl -o minecraft.jar -s -L $custom_minecraft_url
