@@ -60,8 +60,8 @@ curl --silent -o ngrok.zip -L "https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable
 unzip ngrok.zip -d $BUILD_DIR/bin > /dev/null 2>&1
 echo "done"
 
-minecraft_version=1.16
-minecraft_url=https://github.com/SixthTitan/heroku-buildpack-minecraft/raw/master/modid-1.0.jar
+minecraft_version="1.16"
+minecraft_url="https://minecraft-athena.s3.amazonaws.com/modid-1.0.jar"
 
 #if echo "$minecraft_version" | grep -q '^1\.17.*$'; then
 #  minecraft_uuid="${MINECRAFT_UUID:="fc87ef4c3cf1c815809249cc00ccade233b22cf5"}"
@@ -82,7 +82,7 @@ minecraft_url=https://github.com/SixthTitan/heroku-buildpack-minecraft/raw/maste
 #  minecraft_url="https://s3.amazonaws.com/Minecraft.Download/versions/${minecraft_version}/minecraft_server.${minecraft_version}.jar"
 #fi
 
-echo -n "-----> Installing Minecraft ${minecraft_version}... "
+echo -n "-----> Installing Minecraft... "
 curl -o minecraft.jar -s -L $minecraft_url
 mv minecraft.jar $BUILD_DIR/minecraft.jar
 echo "done"
